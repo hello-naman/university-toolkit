@@ -10,20 +10,22 @@ const Index = () => {
   const [isLoading, setIsLoading] = useState<UserRole | null>(null);
 
   const handleLogin = async (role: UserRole) => {
+    console.log('handleLogin called with role:', role);
     setIsLoading(role);
     
-    // Simulate loading time
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Store role in localStorage
-    localStorage.setItem('userRole', role);
-    localStorage.setItem('currentUserId', role === 'student' ? 'S001' : 'admin');
-    
-    // Navigate to appropriate dashboard
-    if (role === 'student') {
-      navigate('/student/dashboard');
-    } else {
-      navigate('/admin/panel');
+    try {
+      // Store role in localStorage
+      localStorage.setItem('userRole', role);
+      localStorage.setItem('currentUserId', role === 'student' ? 'S001' : 'admin');
+      console.log('localStorage updated:', { userRole: role, currentUserId: role === 'student' ? 'S001' : 'admin' });
+      
+      // Navigate to appropriate dashboard immediately
+      const targetRoute = role === 'student' ? '/student/dashboard' : '/admin/panel';
+      console.log('Navigating to:', targetRoute);
+      navigate(targetRoute);
+    } catch (error) {
+      console.error('Login error:', error);
+      setIsLoading(null);
     }
   };
 
