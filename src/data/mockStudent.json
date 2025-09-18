@@ -31,7 +31,7 @@
           "title": "Electronics Club President",
           "type": "Leadership",
           "year": 2025,
-          "verified": true,
+          "verified": false,
           "description": "Leading a team of 50+ students in organizing technical events"
         },
         {
@@ -39,7 +39,7 @@
           "title": "AWS Cloud Practitioner",
           "type": "Certification",
           "year": 2024,
-          "verified": false,
+          "verified": true,
           "description": "AWS Certified Cloud Practitioner with hands-on cloud experience"
         }
       ],
