@@ -47,6 +47,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        student: {
+          DEFAULT: "hsl(var(--student-primary))",
+          secondary: "hsl(var(--student-secondary))",
+          accent: "hsl(var(--student-accent))",
+        },
+        admin: {
+          DEFAULT: "hsl(var(--admin-primary))",
+          secondary: "hsl(var(--admin-secondary))",
+          accent: "hsl(var(--admin-accent))",
+        },
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

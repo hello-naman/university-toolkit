@@ -8,29 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 248 250 252 100%;
+    --foreground: 15 23 42 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 255 255 255 100%;
+    --card-foreground: 15 23 42 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 255 255 255 100%;
+    --popover-foreground: 15 23 42 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 219 234 254 100%;
+    --primary-foreground: 30 58 138 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 241 245 249 100%;
+    --secondary-foreground: 51 65 85 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 248 250 252 100%;
+    --muted-foreground: 100 116 139 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 219 234 254 100%;
+    --accent-foreground: 30 58 138 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 239 68 68 100%;
+    --destructive-foreground: 248 250 252 100%;
+
+    --student-primary: 37 99 235 100%;
+    --student-secondary: 147 197 253 100%;
+    --student-accent: 219 234 254 100%;
+    
+    --admin-primary: 75 85 99 100%;
+    --admin-secondary: 148 163 184 100%;
+    --admin-accent: 241 245 249 100%;
+
+    --success: 34 197 94 100%;
+    --warning: 251 191 36 100%;
+    
+    --gradient-student: linear-gradient(135deg, hsl(var(--student-primary)), hsl(var(--student-secondary)));
+    --gradient-admin: linear-gradient(135deg, hsl(var(--admin-primary)), hsl(var(--admin-secondary)));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted)));
+
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 4px 6px -1px hsl(var(--foreground) / 0.1);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
@@ -56,29 +76,34 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 15 23 42 100%;
+    --foreground: 248 250 252 100%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 30 41 59 100%;
+    --card-foreground: 248 250 252 100%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 30 41 59 100%;
+    --popover-foreground: 248 250 252 100%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 147 197 253 100%;
+    --primary-foreground: 15 23 42 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 51 65 85 100%;
+    --secondary-foreground: 248 250 252 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 51 65 85 100%;
+    --muted-foreground: 148 163 184 100%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 51 65 85 100%;
+    --accent-foreground: 248 250 252 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 220 38 38 100%;
+    --destructive-foreground: 248 250 252 100%;
+
+    --student-primary: 59 130 246 100%;
+    --student-secondary: 96 165 250 100%;
+    --admin-primary: 100 116 139 100%;
+    --admin-secondary: 148 163 184 100%;
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
