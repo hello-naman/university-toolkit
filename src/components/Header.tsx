@@ -40,7 +40,7 @@ const Header = ({ user, onLogout }: HeaderProps) => {
               variant="outline" 
               size="sm"
               onClick={onLogout}
-              className="bg-white/10 border-white/30 hover:bg-white/20 text-white hover:text-white"
+              className="bg-white/10 border-white/30 :bg-white/20 text-white :text-white"
             >
               Logout
             </Button>

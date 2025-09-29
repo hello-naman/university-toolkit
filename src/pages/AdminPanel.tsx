@@ -146,7 +146,7 @@ const AdminPanel = () => {
             <h1 className="text-3xl font-bold text-foreground">Admin Dashboard 📊</h1>
             <p className="text-muted-foreground">Manage student data and verify achievements</p>
           </div>
-          <Button onClick={exportNAACReport} className="bg-admin hover:bg-admin/90 text-white">
+          <Button onClick={exportNAACReport} className="bg-admin hov:bg-admin/90 text-white">
             <Download className="mr-2 h-4 w-4" />
             Export NAAC Report
           </Button>
@@ -185,7 +185,7 @@ const AdminPanel = () => {
         {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Students List */}
-          <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+          <Card className="bg-gradient-card border-border her:shadow-card transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
                 <Users className="h-5 w-5 text-admin" />
@@ -199,7 +199,7 @@ const AdminPanel = () => {
                   className={`p-4 rounded-lg border cursor-pointer transition-all duration-200 ${
                     selectedStudent?.id === student.id
                       ? 'border-admin bg-admin-accent'
-                      : 'border-border bg-white hover:border-admin/50'
+                      : 'border-border bg-white hor:border-admin/50'
                   }`}
                   onClick={() => setSelectedStudent(student)}
                 >
@@ -234,7 +234,7 @@ const AdminPanel = () => {
             {selectedStudent && (
               <>
                 {/* Student Overview */}
-                <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+                <Card className="bg-gradient-card border-border hov:shadow-card transition-all duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">

@@ -35,7 +35,7 @@ const RecruiterSelection = () => {
           <Button
             variant="ghost"
             onClick={handleBack}
-            className="absolute top-4 left-4 text-muted-foreground hover:text-foreground"
+            className="absolute top-4 left-4 text-muted-foreground :text-foreground"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Login
@@ -57,9 +57,9 @@ const RecruiterSelection = () => {
         <CardContent className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Skill-based Recruitment */}
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer border-admin-accent/20 hover:border-admin-accent/40">
+            <Card className="group :shadow-lg transition-all duration-300 :scale-105 cursor-pointer border-admin-accent/20 :border-admin-accent/40">
               <CardContent className="p-8 text-center space-y-6">
-                <div className="mx-auto bg-admin-accent p-6 rounded-full w-fit group-hover:bg-admin-secondary transition-colors">
+                <div className="mx-auto bg-admin-accent p-6 rounded-full w-fit group-:bg-admin-secondary transition-colors">
                   <Target className="h-10 w-10 text-admin" />
                 </div>
                 <div>
@@ -77,7 +77,7 @@ const RecruiterSelection = () => {
                 </div>
                 <Button
                   onClick={() => handleSelection('skill')}
-                  className="w-full bg-admin hover:bg-admin/90 text-white"
+                  className="w-full bg-admin :bg-admin/90 text-white"
                   size="lg"
                 >
                   <Target className="mr-2 h-5 w-5" />
@@ -87,9 +87,9 @@ const RecruiterSelection = () => {
             </Card>
 
             {/* Branch-wise Recruitment */}
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer border-admin-accent/20 hover:border-admin-accent/40">
+            <Card className="group :shadow-lg transition-all duration-300 :scale-105 cursor-pointer border-admin-accent/20 :border-admin-accent/40">
               <CardContent className="p-8 text-center space-y-6">
-                <div className="mx-auto bg-admin-accent p-6 rounded-full w-fit group-hover:bg-admin-secondary transition-colors">
+                <div className="mx-auto bg-admin-accent p-6 rounded-full w-fit group-:bg-admin-secondary transition-colors">
                   <GraduationCap className="h-10 w-10 text-admin" />
                 </div>
                 <div>
@@ -107,7 +107,7 @@ const RecruiterSelection = () => {
                 </div>
                 <Button
                   onClick={() => handleSelection('branch')}
-                  className="w-full bg-admin hover:bg-admin/90 text-white"
+                  className="w-full bg-admin :bg-admin/90 text-white"
                   size="lg"
                 >
                   <GraduationCap className="mr-2 h-5 w-5" />

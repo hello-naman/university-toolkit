@@ -50,7 +50,7 @@ const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification 
   };
 
   return (
-    <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+    <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
       <CardHeader>
         <CardTitle className="flex items-center space-x-2">
           <Award className="h-5 w-5 text-student" />
@@ -67,7 +67,7 @@ const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification 
           return (
             <div
               key={achievement.id}
-              className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-white hover:shadow-sm transition-all duration-200"
+              className="flex items-start space-x-4 p-4 rounded-lg border border-border bg-white :shadow-sm transition-all duration-200"
             >
               <div className="flex-shrink-0">
                 <div className={`p-2 rounded-lg ${getTypeColor(achievement.type)}`}>
@@ -98,7 +98,7 @@ const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification 
                   
                   <div className="flex items-center space-x-2 ml-4">
                     {achievement.verified ? (
-                      <Badge className="bg-success text-white hover:bg-success/90">
+                      <Badge className="bg-success text-white :bg-success/90">
                         <CheckCircle className="h-3 w-3 mr-1" />
                         Verified
                       </Badge>

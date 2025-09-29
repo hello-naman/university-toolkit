@@ -52,9 +52,9 @@ const Index = () => {
         <CardContent className="space-y-6">
           <div className="grid md:grid-cols-3 gap-6">
             {/* Student Login Card */}
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer border-student-accent/20 hover:border-student-accent/40">
+            <Card className="group :shadow-lg transition-all duration-300 :scale-105 cursor-pointer border-student-accent/20 :border-student-accent/40">
               <CardContent className="p-6 text-center space-y-4">
-                <div className="mx-auto bg-student-accent p-4 rounded-full w-fit group-hover:bg-student-secondary transition-colors">
+                <div className="mx-auto bg-student-accent p-4 rounded-full w-fit group-:bg-student-secondary transition-colors">
                   <User className="h-8 w-8 text-student" />
                 </div>
                 <div>
@@ -66,7 +66,7 @@ const Index = () => {
                 <Button
                   onClick={() => handleLogin('student')}
                   disabled={isLoading !== null}
-                  className="w-full bg-student hover:bg-student/90 text-white"
+                  className="w-full bg-student :bg-student/90 text-white"
                   size="lg"
                 >
                   {isLoading === 'student' ? (
@@ -85,9 +85,9 @@ const Index = () => {
             </Card>
 
             {/* Recruiter Login Card */}
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer border-admin-accent/20 hover:border-admin-accent/40">
+            <Card className="group :shadow-lg transition-all duration-300 :scale-105 cursor-pointer border-admin-accent/20 :border-admin-accent/40">
               <CardContent className="p-6 text-center space-y-4">
-                <div className="mx-auto bg-admin-accent p-4 rounded-full w-fit group-hover:bg-admin-secondary transition-colors">
+                <div className="mx-auto bg-admin-accent p-4 rounded-full w-fit group-:bg-admin-secondary transition-colors">
                   <UserCheck className="h-8 w-8 text-admin" />
                 </div>
                 <div>
@@ -99,7 +99,7 @@ const Index = () => {
                 <Button
                   onClick={() => handleLogin('recruiter')}
                   disabled={isLoading !== null}
-                  className="w-full bg-admin hover:bg-admin/90 text-white"
+                  className="w-full bg-admin :bg-admin/90 text-white"
                   size="lg"
                 >
                   {isLoading === 'recruiter' ? (
@@ -118,9 +118,9 @@ const Index = () => {
             </Card>
 
             {/* Admin Login Card */}
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer border-destructive/20 hover:border-destructive/40">
+            <Card className="group her:shadow-lg transition-all duration-300 her:scale-105 cursor-pointer border-destructive/20 :border-destructive/40">
               <CardContent className="p-6 text-center space-y-4">
-                <div className="mx-auto bg-destructive/10 p-4 rounded-full w-fit group-hover:bg-destructive/20 transition-colors">
+                <div className="mx-auto bg-destructive/10 p-4 rounded-full w-fit group-:bg-destructive/20 transition-colors">
                   <UserCheck className="h-8 w-8 text-destructive" />
                 </div>
                 <div>
@@ -132,7 +132,7 @@ const Index = () => {
                 <Button
                   onClick={() => handleLogin('admin')}
                   disabled={isLoading !== null}
-                  className="w-full bg-destructive hover:bg-destructive/90 text-white"
+                  className="w-full bg-destructive :bg-destructive/90 text-white"
                   size="lg"
                 >
                   {isLoading === 'admin' ? (

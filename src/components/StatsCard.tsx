@@ -17,11 +17,11 @@ const StatsCard = ({ title, value, subtitle, icon: Icon, trend, variant = 'defau
   const getVariantStyles = () => {
     switch (variant) {
       case 'student':
-        return 'border-student-accent bg-gradient-to-br from-student-accent to-white hover:shadow-lg hover:shadow-student/10';
+        return 'border-student-accent bg-gradient-to-br from-student-accent to-white :shadow-lg :shadow-student/10';
       case 'admin':
-        return 'border-admin-accent bg-gradient-to-br from-admin-accent to-white hover:shadow-lg hover:shadow-admin/10';
+        return 'border-admin-accent bg-gradient-to-br from-admin-accent to-white :shadow-lg :shadow-admin/10';
       default:
-        return 'border-accent bg-gradient-card hover:shadow-card';
+        return 'border-accent bg-gradient-card :shadow-card';
     }
   };
 
@@ -37,7 +37,7 @@ const StatsCard = ({ title, value, subtitle, icon: Icon, trend, variant = 'defau
   };
 
   return (
-    <Card className={`${getVariantStyles()} transition-all duration-300 hover:scale-105 cursor-pointer`}>
+    <Card className={`${getVariantStyles()} transition-all duration-300 hovr:scale-105 cursor-pointer`}>
       <CardContent className="p-6">
         <div className="flex items-center justify-between">
           <div className="space-y-2">

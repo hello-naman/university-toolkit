@@ -48,7 +48,7 @@ const ChartAttendance = ({ data, variant = 'student' }: ChartAttendanceProps) =>
         pointBorderColor: '#ffffff',
         pointBorderWidth: 2,
         pointRadius: 6,
-        pointHoverRadius: 8,
+        pointRadius: 8,
         fill: true,
         tension: 0.4,
       },
@@ -111,7 +111,7 @@ const ChartAttendance = ({ data, variant = 'student' }: ChartAttendanceProps) =>
     },
     elements: {
       point: {
-        hoverBackgroundColor: variant === 'student' ? 'hsl(var(--student-secondary))' : 'hsl(var(--admin-secondary))',
+        BackgroundColor: variant === 'student' ? 'hsl(var(--student-secondary))' : 'hsl(var(--admin-secondary))',
       },
     },
   };
@@ -120,7 +120,7 @@ const ChartAttendance = ({ data, variant = 'student' }: ChartAttendanceProps) =>
   const trend = data.attendance[data.attendance.length - 1] - data.attendance[0];
 
   return (
-    <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+    <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center space-x-2">

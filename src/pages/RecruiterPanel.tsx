@@ -255,12 +255,12 @@ const RecruiterPanel = () => {
             <Button 
               variant="outline" 
               onClick={() => navigate('/recruiter/selection')}
-              className="border-admin text-admin hover:bg-admin/10"
+              className="border-admin text-admin :bg-admin/10"
             >
               <Filter className="mr-2 h-4 w-4" />
               Switch Mode
             </Button>
-            <Button onClick={exportNAACReport} className="bg-admin hover:bg-admin/90 text-white">
+            <Button onClick={exportNAACReport} className="bg-admin :bg-admin/90 text-white">
               <Download className="mr-2 h-4 w-4" />
               Export Report
             </Button>
@@ -281,7 +281,7 @@ const RecruiterPanel = () => {
                     variant="ghost" 
                     size="sm" 
                     onClick={clearAllFilters}
-                    className="text-muted-foreground hover:text-foreground"
+                    className="text-muted-foreground :text-foreground"
                   >
                     <X className="h-4 w-4 mr-1" />
                     Clear All ({selectedSkills.length})
@@ -308,7 +308,7 @@ const RecruiterPanel = () => {
                       <Badge 
                         key={skill}
                         variant="default"
-                        className="bg-admin text-white cursor-pointer hover:bg-admin/80"
+                        className="bg-admin text-white cursor-pointer :bg-admin/80"
                         onClick={() => handleSkillToggle(skill)}
                       >
                         {skill}
@@ -335,7 +335,7 @@ const RecruiterPanel = () => {
                           className={`cursor-pointer transition-colors ${
                             selectedSkills.includes(skill)
                               ? 'bg-admin text-white'
-                              : 'hover:bg-admin/10 hover:border-admin'
+                              : ':bg-admin/10 :border-admin'
                           }`}
                           onClick={() => handleSkillToggle(skill)}
                         >
@@ -361,7 +361,7 @@ const RecruiterPanel = () => {
                           className={`cursor-pointer transition-colors ${
                             selectedSkills.includes(skill)
                               ? 'bg-admin text-white'
-                              : 'hover:bg-admin/10 hover:border-admin/50'
+                              : ':bg-admin/10 :border-admin/50'
                           }`}
                           onClick={() => handleSkillToggle(skill)}
                         >
@@ -387,7 +387,7 @@ const RecruiterPanel = () => {
                           className={`cursor-pointer transition-colors ${
                             selectedSkills.includes(skill)
                               ? 'bg-admin text-white'
-                              : 'hover:bg-admin/10 hover:border-admin/50 bg-blue-50 border-blue-200'
+                              : ':bg-admin/10 :border-admin/50 bg-blue-50 border-blue-200'
                           }`}
                           onClick={() => handleSkillToggle(skill)}
                         >
@@ -413,7 +413,7 @@ const RecruiterPanel = () => {
                           className={`cursor-pointer transition-colors ${
                             selectedSkills.includes(skill)
                               ? 'bg-admin text-white'
-                              : 'hover:bg-admin/10 hover:border-admin/50 border-dashed'
+                              : ':bg-admin/10 :border-admin/50 border-dashed'
                           }`}
                           onClick={() => handleSkillToggle(skill)}
                         >
@@ -477,7 +477,7 @@ const RecruiterPanel = () => {
         {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Students List */}
-          <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+          <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
                 <Users className="h-5 w-5 text-admin" />
@@ -504,7 +504,7 @@ const RecruiterPanel = () => {
                   className={`p-4 rounded-lg border cursor-pointer transition-all duration-200 ${
                     selectedStudent?.id === student.id
                       ? 'border-admin bg-admin-accent'
-                      : 'border-border bg-white hover:border-admin/50'
+                      : 'border-border bg-white :border-admin/50'
                   }`}
                   onClick={() => setSelectedStudent(student)}
                 >
@@ -558,7 +558,7 @@ const RecruiterPanel = () => {
             {selectedStudent && (
               <>
                 {/* Student Overview */}
-                <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+                <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
                   <CardHeader>
                     <CardTitle className="flex items-center justify-between">
                       <div className="flex items-center space-x-2">
@@ -602,7 +602,7 @@ const RecruiterPanel = () => {
                               className={`text-xs ${
                                 selectedSkills.includes(skill) 
                                   ? 'bg-admin text-white' 
-                                  : 'hover:bg-admin/10'
+                                  : ':bg-admin/10'
                               }`}
                             >
                               {skill}

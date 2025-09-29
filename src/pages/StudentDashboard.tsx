@@ -24,7 +24,7 @@ const StudentDashboard = () => {
     }
 
     // Get student data (using first student from mock data)
-    const studentData = mockData.students.find(s => s.id === userId) || mockData.students[0];
+    const studentData = mockData.students.find(s => s.id === userId) || mockData.students[0]; //db
     setStudent(studentData);
   }, [navigate]);
 
@@ -107,7 +107,7 @@ const StudentDashboard = () => {
             
             {/* Internships Section */}
             {student.internships.length > 0 && (
-              <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+              <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <Building className="h-5 w-5 text-student" />
@@ -139,7 +139,7 @@ const StudentDashboard = () => {
 
             {/* Research Papers Section */}
             {student.research.length > 0 && (
-              <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+              <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <FileText className="h-5 w-5 text-student" />
@@ -180,7 +180,7 @@ const StudentDashboard = () => {
             <ChartAttendance data={student.attendanceData} variant="student" />
             
             {/* Skills Section */}
-            <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+            <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <TrendingUp className="h-5 w-5 text-student" />
@@ -199,7 +199,7 @@ const StudentDashboard = () => {
             </Card>
 
             {/* Portfolio Generation */}
-            <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+            <Card className="bg-gradient-card border-border :shadow-card transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <FileText className="h-5 w-5 text-student" />

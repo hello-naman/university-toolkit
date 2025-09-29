@@ -217,7 +217,7 @@ const PortfolioButton = ({ student, variant = 'student' }: PortfolioButtonProps)
   return (
     <Button 
       onClick={generatePDF}
-      className={`${variant === 'student' ? 'bg-student hover:bg-student/90' : 'bg-admin hover:bg-admin/90'} text-white shadow-lg hover:shadow-xl transition-all duration-300`}
+      className={`${variant === 'student' ? 'bg-student :bg-student/90' : 'bg-admin :bg-admin/90'} text-white shadow-lg :shadow-xl transition-all duration-300`}
       size="lg"
     >
       <Download className="mr-2 h-4 w-4" />
