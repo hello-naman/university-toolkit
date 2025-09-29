@@ -17,7 +17,8 @@ const Index = () => {
       localStorage.setItem('userRole', role);
       const studentLoginStatus = localStorage.getItem('studentLoginStatus');
       const adminLoginStatus = localStorage.getItem('adminLoginStatus');
-      const targetRoute = (role === 'student' ?(studentLoginStatus === 'true' ? '/student/dashboard' : '/student/login' ): (adminLoginStatus === 'true' ? '/admin/panel' : '/admin/login'));
+      const recruiterLoginStatus = localStorage.getItem('recruiterLoginStatus');
+      const targetRoute = (role === 'student' ?(studentLoginStatus === 'true' ? '/student/dashboard' : '/student/login' ):role === 'admin' ? (adminLoginStatus === 'true' ? '/admin/panel' : '/admin/login') : (recruiterLoginStatus === 'true' ? '/recruiter/panel' : '/recruiter/login'));
       console.log('Navigating to:', targetRoute);
       navigate(targetRoute);
     } catch (error) {
@@ -105,6 +106,39 @@ const Index = () => {
                     <>
                       <UserCheck className="mr-2 h-4 w-4" />
                       Login as Admin
+                    </>
+                  )}
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Admin Login Card */}
+            <Card>
+              <CardContent className="p-6 text-center space-y-4">
+                <div className="mx-auto bg-admin-accent p-4 rounded-full w-fit transition-colors">
+                  <UserCheck className="h-8 w-8 text-admin" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground">Recruiter Portal</h3>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Manage job postings, view applicant profiles, and track interview progress
+                  </p>
+                </div>
+                <Button
+                  onClick={() => handleLogin('recruiter')}
+                  disabled={isLoading !== null}
+                  className="w-full bg-admin text-white"
+                  size="lg"
+                >
+                  {isLoading === 'recruiter' ? (
+                    <div className="flex items-center space-x-2">
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      <span>Logging in...</span>
+                    </div>
+                  ) : (
+                    <>
+                      <UserCheck className="mr-2 h-4 w-4" />
+                      Login as Recruiter
                     </>
                   )}
                 </Button>
