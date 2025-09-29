@@ -15,9 +15,9 @@ const Index = () => {
     
     try {
       localStorage.setItem('userRole', role);
-      const studentLoginStatus = false;
-      const adminLoginStatus = true;
-      const targetRoute = (role === 'student' ?(studentLoginStatus ? '/student/dashboard' : '/student/login' ): (adminLoginStatus ? '/admin/panel' : '/admin/login'));
+      const studentLoginStatus = localStorage.getItem('studentLoginStatus');
+      const adminLoginStatus = localStorage.getItem('adminLoginStatus');
+      const targetRoute = (role === 'student' ?(studentLoginStatus === 'true' ? '/student/dashboard' : '/student/login' ): (adminLoginStatus === 'true' ? '/admin/panel' : '/admin/login'));
       console.log('Navigating to:', targetRoute);
       navigate(targetRoute);
     } catch (error) {

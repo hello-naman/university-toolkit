@@ -7,23 +7,26 @@ import ChartAttendance from '@/components/ChartAttendance';
 import PortfolioButton from '@/components/PortfolioButton';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Trophy, TrendingUp, Calendar, Building, FileText, Users } from "lucide-react";
+import { GraduationCap, Trophy, TrendingUp, Calendar, Building, FileText, Users, User } from "lucide-react";
 import mockData from '@/data/mockStudent.json';
+import { Button } from 'react-day-picker';
+import ProfileModal from '@/components/ProfileModal';
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
   const [student, setStudent] = useState<any>(null);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
+
 
   useEffect(() => {
     const userRole = localStorage.getItem('userRole');
     const userId = localStorage.getItem('currentUserId');
-    
+
     if (userRole !== 'student') {
       navigate('/');
       return;
     }
 
-    // Get student data (using first student from mock data)
     const studentData = mockData.students.find(s => s.id === userId) || mockData.students[0];
     setStudent(studentData);
   }, [navigate]);
@@ -50,21 +53,30 @@ const StudentDashboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-student-accent/5 to-student-secondary/10">
-      <Header 
+      <Header
         user={{
           name: student.name,
           course: student.course,
+          branch: student.branch,
           role: 'student'
         }}
         onLogout={handleLogout}
       />
-      
+
       <main className="container mx-auto px-6 py-8 space-y-8">
         {/* Welcome Section */}
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold text-foreground">Welcome back, {student.name.split(' ')[0]}! 👋</h1>
+          <h1 className="text-3xl font-bold text-foreground">Welcome back, {student.name.split(' ')[0]} !</h1>
+          <button
+              onClick={() => setIsProfileOpen(true)}
+              className="p-2 rounded-full bg-student/10 hover:bg-student/20 transition-colors duration-200 group"
+              aria-label="View Profile"
+            >
+              <User className="h-6 w-6 text-student group-hover:scale-110 transition-transform duration-200" />
+            </button>
           <p className="text-muted-foreground">Here's your academic progress overview</p>
-        </div>
+        </div> 
+        <ProfileModal isOpen={isProfileOpen} onClose={setIsProfileOpen} student={student} />
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -104,7 +116,7 @@ const StudentDashboard = () => {
           {/* Left Column - Achievements */}
           <div className="lg:col-span-2 space-y-6">
             <AchievementsList achievements={student.achievements} />
-            
+
             {/* Internships Section */}
             {student.internships.length > 0 && (
               <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
@@ -133,6 +145,7 @@ const StudentDashboard = () => {
                       </div>
                     </div>
                   ))}
+                  <div className="text-center font-semibold text-sm text-foreground cursor-pointer hover:underline">+ Add Internship</div>
                 </CardContent>
               </Card>
             )}
@@ -170,6 +183,7 @@ const StudentDashboard = () => {
                       )}
                     </div>
                   ))}
+                  <div className="text-center font-semibold text-sm text-foreground cursor-pointer hover:underline">+ Add Research Paper</div>
                 </CardContent>
               </Card>
             )}
@@ -178,7 +192,40 @@ const StudentDashboard = () => {
           {/* Right Column - Chart & Actions */}
           <div className="space-y-6">
             <ChartAttendance data={student.attendanceData} variant="student" />
-            
+
+            {/* Gradesheet */}
+            <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center space-x-2">
+                  <FileText className="h-5 w-5 text-student" />
+                  <span>Gradesheet</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  Generate your semester-wise gradesheet in PDF format.
+                </p>
+                <button onClick={() => alert('Feature coming soon!')} className="h-11 rounded-md px-8 bg-student hover:bg-student/90 text-white shadow-lg hover:shadow-xl transition-all duration-300">
+                  Generate Gradesheet
+                </button>
+              </CardContent>
+            </Card>
+
+            {/* Gradesheet */}
+            <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="flex items-center space-x-2">
+                  <FileText className="h-5 w-5 text-student" />
+                  <span>Active Backlogs</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground">
+                  You have {student.backlogs} active backlogs.{student.backlogs>0 ? " Focus on clearing them to improve your academic standing." : " Great job maintaining a clean academic record!"}
+                </p>
+              </CardContent>
+            </Card>
+
             {/* Skills Section */}
             <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
               <CardHeader>
@@ -194,6 +241,9 @@ const StudentDashboard = () => {
                       {skill}
                     </Badge>
                   ))}
+                  <Badge onClick={() => alert('Feature coming soon!')} variant="outline" className="border-student text-student cursor-pointer hover:bg-blue-500 hover:text-white">
+                    + Add Skill
+                  </Badge>
                 </div>
               </CardContent>
             </Card>

@@ -5,6 +5,7 @@ interface HeaderProps {
   user?: {
     name: string;
     course: string;
+    branch: string;
     role: UserRole;
   };
   onLogout: () => void;
@@ -25,7 +26,7 @@ const Header = ({ user, onLogout }: HeaderProps) => {
             {user && (
               <div className="hidden md:block">
                 <p className="text-sm opacity-90">Welcome back,</p>
-                <p className="font-semibold">{user.name} • {user.course}</p>
+                <p className="font-semibold">{user.name} • {user.course} {user.role === "student" ? `(${user.branch})` : null}</p>
               </div>
             )}
           </div>

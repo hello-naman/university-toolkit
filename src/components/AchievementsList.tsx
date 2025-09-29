@@ -132,6 +132,7 @@ const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification 
             <p>No achievements recorded yet</p>
           </div>
         )}
+        <div className="text-center font-semibold text-sm text-foreground cursor-pointer hover:underline">+ Add Achievement</div>
       </CardContent>
     </Card>
   );

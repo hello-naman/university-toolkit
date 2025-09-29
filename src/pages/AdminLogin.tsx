@@ -7,10 +7,10 @@ import { Label } from "@/components/ui/label";
 import { GraduationCap, LogIn } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const StudentLogin = () => {
+const AdminLogin = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const [studentId, setStudentId] = useState('');
+  const [adminId, setAdminId] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -19,15 +19,15 @@ const StudentLogin = () => {
     setIsLoading(true);
 
     setTimeout(() => {
-      if ((studentId === 'UMT001' || studentId === 'UMT002') && password === 'testpass123') {
-        localStorage.setItem('userRole', 'student');
-        localStorage.setItem('currentUserId', studentId);
-        localStorage.setItem('studentLoginStatus', true.toString());
-        navigate('/student/dashboard');
+      if ((adminId === 'ADM001' || adminId === 'ADM002') && password === 'testpass123') {
+        localStorage.setItem('userRole', 'admin');
+        localStorage.setItem('currentUserId', adminId);
+        localStorage.setItem('adminLoginStatus', true.toString());
+        navigate('/admin/panel');
       } else {
         toast({
           title: "Login Failed",
-          description: "Invalid student ID or password.",
+          description: "Invalid admin ID or password.",
           variant: "destructive",
         });
       }
@@ -44,10 +44,10 @@ const StudentLogin = () => {
           </div>
           <div>
             <CardTitle className="text-4xl font-bold bg-gradient-to-r from-student to-student-secondary bg-clip-text text-transparent">
-              Student Login
+              Admin Login
             </CardTitle>
             <CardDescription className="text-lg text-muted-foreground mt-2">
-              Access your personal dashboard
+              Access the admin panel
             </CardDescription>
           </div>
         </CardHeader>
@@ -55,13 +55,13 @@ const StudentLogin = () => {
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-6">
             <div className="space-y-2">
-              <Label htmlFor="studentId">Student ID</Label>
+              <Label htmlFor="adminId">Admin ID</Label>
               <Input
-                id="studentId"
+                id="adminId"
                 type="text"
-                placeholder="2024UMT0001"
-                value={studentId}
-                onChange={(e) => setStudentId(e.target.value.toUpperCase())}
+                placeholder="ADM001"
+                value={adminId}
+                onChange={(e) => setAdminId(e.target.value.toUpperCase())}
                 required
               />
             </div>
@@ -101,4 +101,4 @@ const StudentLogin = () => {
   );
 };
 
-export default StudentLogin;
+export default AdminLogin;
