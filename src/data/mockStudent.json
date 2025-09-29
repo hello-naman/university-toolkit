@@ -1,0 +1,125 @@
+{
+  "students": [
+    {
+      "id": "S001",
+      "name": "Naman Sawnani",
+      "course": "B.Tech ECE",
+      "semester": 6,
+      "cgpa": 8.2,
+      "attendance": 92,
+      "email": "naman.sawnani@college.edu",
+      "phone": "+91 9876543210",
+      "achievements": [
+        {
+          "id": "A001",
+          "title": "NPTEL AI Course Certification",
+          "type": "Course",
+          "year": 2024,
+          "verified": true,
+          "description": "Completed Advanced AI and Machine Learning course with 95% score"
+        },
+        {
+          "id": "A002", 
+          "title": "Hackathon Winner - Code2Create",
+          "type": "Competition",
+          "year": 2025,
+          "verified": true,
+          "description": "First place in inter-college hackathon with Smart Campus solution"
+        },
+        {
+          "id": "A003",
+          "title": "Electronics Club President",
+          "type": "Leadership",
+          "year": 2025,
+          "verified": false,
+          "description": "Leading a team of 50+ students in organizing technical events"
+        },
+        {
+          "id": "A004",
+          "title": "AWS Cloud Practitioner",
+          "type": "Certification",
+          "year": 2024,
+          "verified": true,
+          "description": "AWS Certified Cloud Practitioner with hands-on cloud experience"
+        }
+      ],
+      "internships": [
+        {
+          "id": "I001",
+          "company": "TechNova Labs",
+          "role": "AI/ML Intern",
+          "duration": "6 weeks",
+          "year": 2024,
+          "description": "Worked on computer vision projects using PyTorch and OpenCV"
+        },
+        {
+          "id": "I002",
+          "company": "StartupXYZ",
+          "role": "Full Stack Developer Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Developed web applications using React.js and Node.js"
+        }
+      ],
+      "research": [
+        {
+          "id": "R001",
+          "title": "Efficient FM Modulation Techniques for IoT Devices",
+          "conference": "IEEE IC2024",
+          "year": 2024,
+          "status": "Published",
+          "coAuthors": ["Dr. Priya Singh", "Ravi Kumar"]
+        }
+      ],
+      "skills": ["Python", "JavaScript", "React.js", "Machine Learning", "AWS", "IoT", "Circuit Design"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [85, 88, 92, 89, 95, 91, 94, 92]
+      }
+    },
+    {
+      "id": "S002",
+      "name": "Priya Patel",
+      "course": "B.Tech CSE",
+      "semester": 4,
+      "cgpa": 9.1,
+      "attendance": 96,
+      "email": "priya.patel@college.edu",
+      "phone": "+91 9876543211",
+      "achievements": [
+        {
+          "id": "A005",
+          "title": "Google Developer Student Club Lead",
+          "type": "Leadership",
+          "year": 2025,
+          "verified": true,
+          "description": "Leading GDSC chapter with 200+ active members"
+        },
+        {
+          "id": "A006",
+          "title": "Microsoft Azure Fundamentals",
+          "type": "Certification",
+          "year": 2024,
+          "verified": false,
+          "description": "Azure cloud certification with practical project experience"
+        }
+      ],
+      "internships": [
+        {
+          "id": "I003",
+          "company": "Microsoft",
+          "role": "Software Engineering Intern",
+          "duration": "12 weeks",
+          "year": 2024,
+          "description": "Contributed to Azure cloud services development"
+        }
+      ],
+      "research": [],
+      "skills": ["Java", "Python", "Cloud Computing", "DevOps", "Leadership"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [92, 94, 96, 95, 98, 96, 97, 96]
+      }
+    }
+  ]
+}
