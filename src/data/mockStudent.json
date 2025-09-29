@@ -19,7 +19,7 @@
           "description": "Completed Advanced AI and Machine Learning course with 95% score"
         },
         {
-          "id": "A002", 
+          "id": "A002",
           "title": "Hackathon Winner - Code2Create",
           "type": "Competition",
           "year": 2025,
@@ -119,6 +119,1173 @@
       "attendanceData": {
         "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
         "attendance": [92, 94, 96, 95, 98, 96, 97, 96]
+      }
+    },
+    {
+      "id": "S003",
+      "name": "Rohan Mehra",
+      "course": "B.Tech Mechanical",
+      "semester": 8,
+      "cgpa": 7.8,
+      "attendance": 85,
+      "email": "rohan.mehra@college.edu",
+      "phone": "+91 9123456780",
+      "achievements": [
+        {
+          "id": "A007",
+          "title": "AutoCAD Certified Professional",
+          "type": "Certification",
+          "year": 2024,
+          "verified": true,
+          "description": "Certified by Autodesk for professional-level skills in AutoCAD."
+        },
+        {
+          "id": "A008",
+          "title": "Captain - College Football Team",
+          "type": "Leadership",
+          "year": 2025,
+          "verified": false,
+          "description": "Led the team to win the inter-university championship."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I004",
+          "company": "Mahindra & Mahindra",
+          "role": "Mechanical Engineering Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Worked on chassis design and stress analysis using SolidWorks."
+        }
+      ],
+      "research": [],
+      "skills": ["AutoCAD", "SolidWorks", "Ansys", "Thermodynamics", "GD&T", "MATLAB"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [82, 85, 88, 81, 90, 84, 86, 89]
+      }
+    },
+    {
+      "id": "S004",
+      "name": "Anjali Sharma",
+      "course": "B.Tech Civil",
+      "semester": 5,
+      "cgpa": 8.5,
+      "attendance": 91,
+      "email": "anjali.sharma@college.edu",
+      "phone": "+91 9123456781",
+      "achievements": [
+        {
+          "id": "A009",
+          "title": "Winner - Bridge Design Competition",
+          "type": "Competition",
+          "year": 2024,
+          "verified": true,
+          "description": "Designed and built a model bridge that sustained the highest load."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I005",
+          "company": "Larsen & Toubro",
+          "role": "Civil Engineering Intern",
+          "duration": "6 weeks",
+          "year": 2024,
+          "description": "Assisted in site management and quality control for a major infrastructure project."
+        }
+      ],
+      "research": [],
+      "skills": ["AutoCAD", "STAAD Pro", "Revit", "Surveying", "Structural Analysis"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [90, 92, 89, 94, 91, 93, 88, 92]
+      }
+    },
+    {
+      "id": "S005",
+      "name": "Vikram Rathore",
+      "course": "B.Tech Electrical",
+      "semester": 7,
+      "cgpa": 8.9,
+      "attendance": 94,
+      "email": "vikram.rathore@college.edu",
+      "phone": "+91 9123456782",
+      "achievements": [
+        {
+          "id": "A010",
+          "title": "NPTEL - Control Systems",
+          "type": "Course",
+          "year": 2025,
+          "verified": true,
+          "description": "Scored 'Elite+Gold' in the NPTEL course on Control Systems."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I006",
+          "company": "Siemens",
+          "role": "Electrical Engineering Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Worked on PLC programming and SCADA system integration."
+        }
+      ],
+      "research": [
+        {
+          "id": "R002",
+          "title": "Optimization of Power Grid Distribution using AI",
+          "conference": "IEEE PowerCon 2025",
+          "year": 2025,
+          "status": "In Review",
+          "coAuthors": ["Dr. Alok Verma"]
+        }
+      ],
+      "skills": ["MATLAB", "Simulink", "Power Systems", "Control Systems", "PLC", "SCADA"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [95, 92, 96, 93, 97, 94, 91, 95]
+      }
+    },
+    {
+      "id": "S006",
+      "name": "Sneha Reddy",
+      "course": "B.Tech CSE",
+      "semester": 6,
+      "cgpa": 9.5,
+      "attendance": 98,
+      "email": "sneha.reddy@college.edu",
+      "phone": "+91 9123456783",
+      "achievements": [
+        {
+          "id": "A011",
+          "title": "Smart India Hackathon 2024 Winner",
+          "type": "Competition",
+          "year": 2024,
+          "verified": true,
+          "description": "Won the national level hackathon for a project on digital governance."
+        },
+        {
+          "id": "A012",
+          "title": "Google Cloud Certified: Associate Cloud Engineer",
+          "type": "Certification",
+          "year": 2025,
+          "verified": true,
+          "description": "Certified for skills in deploying and managing applications on GCP."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I007",
+          "company": "Google",
+          "role": "STEP Intern",
+          "duration": "12 weeks",
+          "year": 2024,
+          "description": "Developed features for Google Photos using Java and Angular."
+        }
+      ],
+      "research": [],
+      "skills": ["Java", "Python", "GCP", "Kubernetes", "Data Structures", "Algorithms", "React.js"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [98, 99, 97, 98, 99, 96, 98, 99]
+      }
+    },
+    {
+      "id": "S007",
+      "name": "Aditya Rao",
+      "course": "B.Tech ECE",
+      "semester": 4,
+      "cgpa": 8.1,
+      "attendance": 88,
+      "email": "aditya.rao@college.edu",
+      "phone": "+91 9123456784",
+      "achievements": [
+        {
+          "id": "A013",
+          "title": "IoT Based Smart Home Project",
+          "type": "Project",
+          "year": 2024,
+          "verified": false,
+          "description": "Developed a fully functional smart home system using Raspberry Pi and AWS IoT."
+        }
+      ],
+      "internships": [],
+      "research": [],
+      "skills": ["C", "Python", "IoT", "Embedded Systems", "VHDL", "Circuit Design"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [85, 90, 88, 86, 91, 89, 87, 90]
+      }
+    },
+    {
+      "id": "S008",
+      "name": "Meera Iyer",
+      "course": "B.Tech Chemical",
+      "semester": 8,
+      "cgpa": 9.2,
+      "attendance": 95,
+      "email": "meera.iyer@college.edu",
+      "phone": "+91 9123456785",
+      "achievements": [
+        {
+          "id": "A014",
+          "title": "Gold Medalist - Academics",
+          "type": "Academic",
+          "year": 2025,
+          "verified": true,
+          "description": "Branch topper for the academic year 2024-2025."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I008",
+          "company": "Reliance Industries",
+          "role": "Process Engineering Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Optimized a distillation column process using Aspen Plus, improving efficiency by 5%."
+        }
+      ],
+      "research": [
+        {
+          "id": "R003",
+          "title": "Development of a Novel Catalyst for Polymerization",
+          "conference": "AIChE Annual Meeting 2025",
+          "year": 2025,
+          "status": "Published",
+          "coAuthors": ["Dr. S. K. Gupta"]
+        }
+      ],
+      "skills": ["Aspen Plus", "Chemical Engineering", "Process Design", "Thermodynamics", "Fluid Mechanics"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [94, 96, 95, 97, 93, 95, 96, 94]
+      }
+    },
+    {
+      "id": "S009",
+      "name": "Karan Malhotra",
+      "course": "B.Tech Metallurgy",
+      "semester": 6,
+      "cgpa": 7.5,
+      "attendance": 82,
+      "email": "karan.malhotra@college.edu",
+      "phone": "+91 9123456786",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I009",
+          "company": "Tata Steel",
+          "role": "Metallurgy Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Worked in the Quality Assurance lab, performing material testing and analysis."
+        }
+      ],
+      "research": [],
+      "skills": ["Materials Science", "Physical Metallurgy", "Extractive Metallurgy", "Thermodynamics"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [80, 82, 85, 79, 84, 83, 81, 85]
+      }
+    },
+    {
+      "id": "S010",
+      "name": "Diya Joshi",
+      "course": "B.Tech CSE",
+      "semester": 2,
+      "cgpa": 8.8,
+      "attendance": 96,
+      "email": "diya.joshi@college.edu",
+      "phone": "+91 9123456787",
+      "achievements": [
+        {
+          "id": "A015",
+          "title": "Codeforces - Newbie of the Year",
+          "type": "Competition",
+          "year": 2025,
+          "verified": false,
+          "description": "Recognized for rapid rating increase in competitive programming."
+        }
+      ],
+      "internships": [],
+      "research": [],
+      "skills": ["C++", "Python", "Data Structures", "Algorithms"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [95, 96, 97, 94, 98, 95, 96, 97]
+      }
+    },
+    {
+      "id": "S011",
+      "name": "Amit Kumar",
+      "course": "B.Tech Mechanical",
+      "semester": 8,
+      "cgpa": 8.0,
+      "attendance": 89,
+      "email": "amit.kumar@college.edu",
+      "phone": "+91 9123456788",
+      "achievements": [
+        {
+          "id": "A016",
+          "title": "Head of SAE Baja Team",
+          "type": "Leadership",
+          "year": 2025,
+          "verified": true,
+          "description": "Led a team of 30 to design and fabricate an all-terrain vehicle for national competition."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I010",
+          "company": "Tata Motors",
+          "role": "Automotive Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Involved in the R&D of vehicle dynamics and suspension systems."
+        }
+      ],
+      "research": [],
+      "skills": ["SolidWorks", "CATIA", "Ansys", "Vehicle Dynamics", "Team Leadership"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [88, 90, 87, 91, 89, 88, 92, 87]
+      }
+    },
+    {
+      "id": "S012",
+      "name": "Pooja Desai",
+      "course": "B.Tech Civil",
+      "semester": 3,
+      "cgpa": 7.9,
+      "attendance": 90,
+      "email": "pooja.desai@college.edu",
+      "phone": "+91 9123456789",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["AutoCAD", "Surveying", "Concrete Technology"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [90, 89, 91, 92, 88, 90, 91, 89]
+      }
+    },
+    {
+      "id": "S013",
+      "name": "Rajesh Nair",
+      "course": "B.Tech Electrical",
+      "semester": 5,
+      "cgpa": 8.3,
+      "attendance": 92,
+      "email": "rajesh.nair@college.edu",
+      "phone": "+91 9234567890",
+      "achievements": [
+        {
+          "id": "A017",
+          "title": "IEEE Student Branch Secretary",
+          "type": "Leadership",
+          "year": 2024,
+          "verified": true,
+          "description": "Organized workshops on PCB design and IoT for over 200 students."
+        }
+      ],
+      "internships": [],
+      "research": [],
+      "skills": ["MATLAB", "Control Systems", "Python", "PCB Design"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [91, 93, 90, 94, 92, 93, 91, 92]
+      }
+    },
+    {
+      "id": "S014",
+      "name": "Sunita Menon",
+      "course": "B.Tech CSE",
+      "semester": 7,
+      "cgpa": 9.8,
+      "attendance": 99,
+      "email": "sunita.menon@college.edu",
+      "phone": "+91 9234567891",
+      "achievements": [
+        {
+          "id": "A018",
+          "title": "Microsoft Imagine Cup - World Finalist",
+          "type": "Competition",
+          "year": 2025,
+          "verified": true,
+          "description": "Represented India at the world finals with a project on AI for healthcare."
+        },
+        {
+          "id": "A019",
+          "title": "Published Paper on ML",
+          "type": "Research",
+          "year": 2025,
+          "verified": true,
+          "description": "First author on a paper about 'Federated Learning for Medical Imaging' at a top conference."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I011",
+          "company": "Adobe",
+          "role": "Research Intern",
+          "duration": "6 months",
+          "year": 2024,
+          "description": "Contributed to Adobe's Sensei AI platform."
+        }
+      ],
+      "research": [
+        {
+          "id": "R004",
+          "title": "Federated Learning for Medical Imaging",
+          "conference": "NeurIPS 2025",
+          "year": 2025,
+          "status": "Published",
+          "coAuthors": ["Dr. Anil Kapoor"]
+        }
+      ],
+      "skills": ["Python", "Machine Learning", "Deep Learning", "PyTorch", "TensorFlow", "Computer Vision"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [99, 98, 100, 99, 98, 99, 100, 99]
+      }
+    },
+    {
+      "id": "S015",
+      "name": "Arjun Varma",
+      "course": "B.Tech ECE",
+      "semester": 8,
+      "cgpa": 8.6,
+      "attendance": 93,
+      "email": "arjun.varma@college.edu",
+      "phone": "+91 9234567892",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I012",
+          "company": "Intel",
+          "role": "VLSI Design Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Worked on the physical design and verification of a new chipset."
+        }
+      ],
+      "research": [],
+      "skills": ["VHDL", "Verilog", "VLSI", "SystemVerilog", "Cadence Tools"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [92, 94, 91, 95, 93, 94, 92, 93]
+      }
+    },
+    {
+      "id": "S016",
+      "name": "Ishita Biswas",
+      "course": "B.Tech Chemical",
+      "semester": 4,
+      "cgpa": 8.2,
+      "attendance": 89,
+      "email": "ishita.biswas@college.edu",
+      "phone": "+91 9234567893",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["Chemical Engineering", "Thermodynamics", "MATLAB"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [88, 90, 87, 91, 89, 88, 90, 89]
+      }
+    },
+    {
+      "id": "S017",
+      "name": "Siddharth Jain",
+      "course": "B.Tech CSE",
+      "semester": 5,
+      "cgpa": 9.0,
+      "attendance": 95,
+      "email": "siddharth.jain@college.edu",
+      "phone": "+91 9234567894",
+      "achievements": [
+        {
+          "id": "A020",
+          "title": "LeetCode Knight",
+          "type": "Competition",
+          "year": 2025,
+          "verified": true,
+          "description": "Achieved a Knight badge on LeetCode with over 1000 problems solved."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I013",
+          "company": "Amazon",
+          "role": "SDE Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Worked with the AWS S3 team on backend service optimization."
+        }
+      ],
+      "research": [],
+      "skills": ["C++", "Java", "Data Structures", "Algorithms", "System Design", "AWS"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [95, 94, 96, 95, 97, 94, 95, 96]
+      }
+    },
+    {
+      "id": "S018",
+      "name": "Natasha Singh",
+      "course": "B.Tech Metallurgy",
+      "semester": 7,
+      "cgpa": 8.4,
+      "attendance": 90,
+      "email": "natasha.singh@college.edu",
+      "phone": "+91 9234567895",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I014",
+          "company": "JSW Steel",
+          "role": "Graduate Engineer Trainee",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Trained in the blast furnace and steel melting shop operations."
+        }
+      ],
+      "research": [],
+      "skills": ["Materials Science", "Extractive Metallurgy", "Process Control"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [90, 89, 91, 92, 88, 90, 91, 89]
+      }
+    },
+    {
+      "id": "S019",
+      "name": "Ravi Shankar",
+      "course": "B.Tech Mechanical",
+      "semester": 6,
+      "cgpa": 7.6,
+      "attendance": 84,
+      "email": "ravi.shankar@college.edu",
+      "phone": "+91 9234567896",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["AutoCAD", "Thermodynamics", "Fluid Mechanics"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [82, 85, 83, 86, 84, 85, 83, 84]
+      }
+    },
+    {
+      "id": "S020",
+      "name": "Kavya Murthy",
+      "course": "B.Tech Civil",
+      "semester": 8,
+      "cgpa": 9.3,
+      "attendance": 97,
+      "email": "kavya.murthy@college.edu",
+      "phone": "+91 9234567897",
+      "achievements": [
+        {
+          "id": "A021",
+          "title": "Paper on Sustainable Concrete",
+          "type": "Research",
+          "year": 2025,
+          "verified": true,
+          "description": "Published a paper on the use of recycled materials in concrete manufacturing."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I015",
+          "company": "Afcons Infrastructure",
+          "role": "Structural Design Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Analyzed and designed structural components for a metro rail project."
+        }
+      ],
+      "research": [
+        {
+          "id": "R005",
+          "title": "Use of Recycled Plastic in High-Strength Concrete",
+          "conference": "International Journal of Civil Engineering",
+          "year": 2025,
+          "status": "Published",
+          "coAuthors": ["Dr. R. K. Sharma"]
+        }
+      ],
+      "skills": ["STAAD Pro", "Revit", "ETABS", "Structural Analysis", "Concrete Technology"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [97, 96, 98, 97, 95, 98, 97, 98]
+      }
+    },
+    {
+      "id": "S021",
+      "name": "Manish Pandey",
+      "course": "B.Tech Electrical",
+      "semester": 4,
+      "cgpa": 7.7,
+      "attendance": 86,
+      "email": "manish.pandey@college.edu",
+      "phone": "+91 9234567898",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["MATLAB", "Circuit Theory", "Power Systems"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [85, 87, 84, 88, 86, 87, 85, 86]
+      }
+    },
+    {
+      "id": "S022",
+      "name": "Aisha Khan",
+      "course": "B.Tech CSE",
+      "semester": 6,
+      "cgpa": 9.2,
+      "attendance": 96,
+      "email": "aisha.khan@college.edu",
+      "phone": "+91 9234567899",
+      "achievements": [
+        {
+          "id": "A022",
+          "title": "Data Science Course by IBM",
+          "type": "Certification",
+          "year": 2024,
+          "verified": true,
+          "description": "Completed the IBM Data Science Professional Certificate on Coursera."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I016",
+          "company": "Flipkart",
+          "role": "Data Analyst Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Worked on customer segmentation and sales forecasting models."
+        }
+      ],
+      "research": [],
+      "skills": ["Python", "SQL", "Tableau", "Pandas", "Scikit-learn", "Data Analysis"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [96, 95, 97, 96, 98, 95, 96, 97]
+      }
+    },
+    {
+      "id": "S023",
+      "name": "Varun Agarwal",
+      "course": "B.Tech ECE",
+      "semester": 2,
+      "cgpa": 8.0,
+      "attendance": 90,
+      "email": "varun.agarwal@college.edu",
+      "phone": "+91 9345678900",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["C", "Digital Electronics", "Circuit Design"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [90, 89, 91, 92, 88, 90, 91, 89]
+      }
+    },
+    {
+      "id": "S024",
+      "name": "Tanvi Shah",
+      "course": "B.Tech Mechanical",
+      "semester": 7,
+      "cgpa": 8.7,
+      "attendance": 92,
+      "email": "tanvi.shah@college.edu",
+      "phone": "+91 9345678901",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I017",
+          "company": "Maruti Suzuki",
+          "role": "R&D Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Assisted in the development and testing of engine components."
+        }
+      ],
+      "research": [],
+      "skills": ["CATIA", "Ansys", "Thermodynamics", "Engine Design"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [91, 93, 90, 94, 92, 93, 91, 92]
+      }
+    },
+    {
+      "id": "S025",
+      "name": "Deepak Singh",
+      "course": "B.Tech Civil",
+      "semester": 6,
+      "cgpa": 7.4,
+      "attendance": 83,
+      "email": "deepak.singh@college.edu",
+      "phone": "+91 9345678902",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["AutoCAD", "STAAD Pro", "Surveying"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [82, 84, 81, 85, 83, 84, 82, 83]
+      }
+    },
+    {
+      "id": "S026",
+      "name": "Shreya Gupta",
+      "course": "B.Tech CSE",
+      "semester": 8,
+      "cgpa": 9.6,
+      "attendance": 98,
+      "email": "shreya.gupta@college.edu",
+      "phone": "+91 9345678903",
+      "achievements": [
+        {
+          "id": "A023",
+          "title": "ACM ICPC Regionalist",
+          "type": "Competition",
+          "year": 2025,
+          "verified": true,
+          "description": "Qualified for the ACM ICPC regionals, a prestigious competitive programming contest."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I018",
+          "company": "DE Shaw",
+          "role": "Software Developer Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Worked on developing low-latency trading systems."
+        }
+      ],
+      "research": [],
+      "skills": ["C++", "Algorithms", "Data Structures", "Python", "Low-Latency Systems"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [98, 97, 99, 98, 97, 99, 98, 99]
+      }
+    },
+    {
+      "id": "S027",
+      "name": "Vivek Nair",
+      "course": "B.Tech Electrical",
+      "semester": 6,
+      "cgpa": 8.1,
+      "attendance": 88,
+      "email": "vivek.nair@college.edu",
+      "phone": "+91 9345678904",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["Power Systems", "Control Systems", "MATLAB"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [87, 89, 86, 90, 88, 89, 87, 88]
+      }
+    },
+    {
+      "id": "S028",
+      "name": "Ananya Reddy",
+      "course": "B.Tech ECE",
+      "semester": 5,
+      "cgpa": 8.8,
+      "attendance": 94,
+      "email": "ananya.reddy@college.edu",
+      "phone": "+91 9345678905",
+      "achievements": [
+        {
+          "id": "A024",
+          "title": "Embedded Systems Workshop Coordinator",
+          "type": "Leadership",
+          "year": 2024,
+          "verified": true,
+          "description": "Organized and conducted a 3-day workshop on embedded systems using Arduino and Raspberry Pi."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I019",
+          "company": "Samsung R&D",
+          "role": "Embedded Systems Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Developed firmware for a new line of smart devices."
+        }
+      ],
+      "research": [],
+      "skills": ["C", "Embedded Systems", "IoT", "Python", "RTOS"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [94, 93, 95, 94, 96, 93, 94, 95]
+      }
+    },
+    {
+      "id": "S029",
+      "name": "Harsh Patel",
+      "course": "B.Tech Chemical",
+      "semester": 7,
+      "cgpa": 8.5,
+      "attendance": 91,
+      "email": "harsh.patel@college.edu",
+      "phone": "+91 9345678906",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I020",
+          "company": "BASF",
+          "role": "Chemical Engineering Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Involved in process simulation and optimization for a new chemical plant."
+        }
+      ],
+      "research": [],
+      "skills": ["Aspen Plus", "Process Simulation", "Heat Transfer", "Mass Transfer"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [90, 92, 89, 93, 91, 92, 90, 91]
+      }
+    },
+    {
+      "id": "S030",
+      "name": "Riya Sharma",
+      "course": "B.Tech CSE",
+      "semester": 4,
+      "cgpa": 9.3,
+      "attendance": 97,
+      "email": "riya.sharma@college.edu",
+      "phone": "+91 9345678907",
+      "achievements": [
+        {
+          "id": "A025",
+          "title": "GirlsScript Foundation Volunteer",
+          "type": "Volunteer",
+          "year": 2024,
+          "verified": true,
+          "description": "Mentored school students in web development and programming basics."
+        }
+      ],
+      "internships": [],
+      "research": [],
+      "skills": ["Java", "JavaScript", "HTML", "CSS", "React.js"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [97, 96, 98, 97, 95, 98, 97, 98]
+      }
+    },
+    {
+      "id": "S031",
+      "name": "Nikhil Gupta",
+      "course": "B.Tech Metallurgy",
+      "semester": 8,
+      "cgpa": 7.9,
+      "attendance": 87,
+      "email": "nikhil.gupta@college.edu",
+      "phone": "+91 9345678908",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I021",
+          "company": "Hindalco Industries",
+          "role": "Metallurgy Trainee",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Worked on improving the efficiency of aluminum extraction processes."
+        }
+      ],
+      "research": [],
+      "skills": ["Extractive Metallurgy", "Physical Metallurgy", "Material Characterization"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [86, 88, 85, 89, 87, 88, 86, 87]
+      }
+    },
+    {
+      "id": "S032",
+      "name": "Sanya Verma",
+      "course": "B.Tech Mechanical",
+      "semester": 5,
+      "cgpa": 8.4,
+      "attendance": 91,
+      "email": "sanya.verma@college.edu",
+      "phone": "+91 9345678909",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["SolidWorks", "AutoCAD", "Ansys"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [91, 90, 92, 91, 93, 90, 91, 92]
+      }
+    },
+    {
+      "id": "S033",
+      "name": "Rajat Singh",
+      "course": "B.Tech CSE",
+      "semester": 6,
+      "cgpa": 8.8,
+      "attendance": 94,
+      "email": "rajat.singh@college.edu",
+      "phone": "+91 9345678910",
+      "achievements": [
+        {
+          "id": "A026",
+          "title": "Cyber Security Workshop Host",
+          "type": "Leadership",
+          "year": 2025,
+          "verified": true,
+          "description": "Conducted a college-wide workshop on ethical hacking and cybersecurity."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I022",
+          "company": "PwC",
+          "role": "Cyber Security Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Assisted in vulnerability assessment and penetration testing for clients."
+        }
+      ],
+      "research": [],
+      "skills": ["Python", "Cyber Security", "Ethical Hacking", "Networking", "Linux"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [93, 95, 92, 96, 94, 95, 93, 94]
+      }
+    },
+    {
+      "id": "S034",
+      "name": "Divya Kumar",
+      "course": "B.Tech Civil",
+      "semester": 7,
+      "cgpa": 8.2,
+      "attendance": 89,
+      "email": "divya.kumar@college.edu",
+      "phone": "+91 9345678911",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["STAAD Pro", "Structural Analysis", "AutoCAD"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [88, 90, 87, 91, 89, 90, 88, 89]
+      }
+    },
+    {
+      "id": "S035",
+      "name": "Abhishek Jha",
+      "course": "B.Tech Electrical",
+      "semester": 8,
+      "cgpa": 9.1,
+      "attendance": 95,
+      "email": "abhishek.jha@college.edu",
+      "phone": "+91 9345678912",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I023",
+          "company": "NTPC",
+          "role": "Power Plant Engineering Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Worked on the maintenance and operation of turbines and generators."
+        }
+      ],
+      "research": [],
+      "skills": ["Power Systems", "MATLAB", "PLC", "Control Systems"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [95, 94, 96, 95, 97, 94, 95, 96]
+      }
+    },
+    {
+      "id": "S036",
+      "name": "Priyanka Tiwari",
+      "course": "B.Tech ECE",
+      "semester": 6,
+      "cgpa": 8.7,
+      "attendance": 93,
+      "email": "priyanka.tiwari@college.edu",
+      "phone": "+91 9345678913",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I024",
+          "company": "Qualcomm",
+          "role": "Wireless Communication Intern",
+          "duration": "3 months",
+          "year": 2024,
+          "description": "Assisted in the simulation and testing of 5G communication protocols."
+        }
+      ],
+      "research": [],
+      "skills": ["Signal Processing", "Communication Systems", "MATLAB", "Python", "5G"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [92, 94, 91, 95, 93, 94, 92, 93]
+      }
+    },
+    {
+      "id": "S037",
+      "name": "Rahul Chauhan",
+      "course": "B.Tech CSE",
+      "semester": 3,
+      "cgpa": 8.3,
+      "attendance": 91,
+      "email": "rahul.chauhan@college.edu",
+      "phone": "+91 9345678914",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["C++", "Data Structures", "Python"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [91, 90, 92, 91, 93, 90, 91, 92]
+      }
+    },
+    {
+      "id": "S038",
+      "name": "Swati Mishra",
+      "course": "B.Tech Mechanical",
+      "semester": 8,
+      "cgpa": 8.9,
+      "attendance": 94,
+      "email": "swati.mishra@college.edu",
+      "phone": "+91 9345678915",
+      "achievements": [],
+      "internships": [
+        {
+          "id": "I025",
+          "company": "ISRO",
+          "role": "Research Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Worked on the thermodynamic analysis of rocket engine components."
+        }
+      ],
+      "research": [],
+      "skills": ["Thermodynamics", "Fluid Mechanics", "Ansys", "MATLAB"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [94, 93, 95, 94, 96, 93, 94, 95]
+      }
+    },
+    {
+      "id": "S039",
+      "name": "Aryan Sharma",
+      "course": "B.Tech CSE",
+      "semester": 7,
+      "cgpa": 9.4,
+      "attendance": 97,
+      "email": "aryan.sharma@college.edu",
+      "phone": "+91 9345678916",
+      "achievements": [
+        {
+          "id": "A027",
+          "title": "TensorFlow Developer Certificate",
+          "type": "Certification",
+          "year": 2025,
+          "verified": true,
+          "description": "Certified by Google for expertise in building and training ML models using TensorFlow."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I026",
+          "company": "NVIDIA",
+          "role": "Deep Learning Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Worked on optimizing deep learning models for performance on NVIDIA GPUs."
+        }
+      ],
+      "research": [],
+      "skills": ["Machine Learning", "Deep Learning", "Python", "TensorFlow", "PyTorch", "CUDA"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [97, 96, 98, 97, 95, 98, 97, 98]
+      }
+    },
+    {
+      "id": "S040",
+      "name": "Neha Agarwal",
+      "course": "B.Tech Civil",
+      "semester": 4,
+      "cgpa": 8.0,
+      "attendance": 88,
+      "email": "neha.agarwal@college.edu",
+      "phone": "+91 9345678917",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["AutoCAD", "Surveying"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [87, 89, 86, 90, 88, 89, 87, 88]
+      }
+    },
+    {
+      "id": "S041",
+      "name": "Sameer Khan",
+      "course": "B.Tech Chemical",
+      "semester": 6,
+      "cgpa": 8.3,
+      "attendance": 90,
+      "email": "sameer.khan@college.edu",
+      "phone": "+91 9345678918",
+      "achievements": [],
+      "internships": [],
+      "research": [],
+      "skills": ["Process Design", "Chemical Engineering", "Thermodynamics"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [90, 89, 91, 92, 88, 90, 91, 89]
+      }
+    },
+    {
+      "id": "S042",
+      "name": "Zoya Akhtar",
+      "course": "B.Tech CSE",
+      "semester": 8,
+      "cgpa": 9.7,
+      "attendance": 99,
+      "email": "zoya.akhtar@college.edu",
+      "phone": "+91 9345678919",
+      "achievements": [
+        {
+          "id": "A028",
+          "title": "Co-founder, Campus Coding Club",
+          "type": "Leadership",
+          "year": 2024,
+          "verified": true,
+          "description": "Grew the club from 10 to 250 members, organizing weekly contests and workshops."
+        }
+      ],
+      "internships": [
+        {
+          "id": "I027",
+          "company": "Atlassian",
+          "role": "Backend Developer Intern",
+          "duration": "6 months",
+          "year": 2025,
+          "description": "Worked on the Jira Cloud platform, improving API performance and reliability."
+        }
+      ],
+      "research": [],
+      "skills": ["Java", "Spring Boot", "System Design", "Microservices", "PostgreSQL", "Leadership"],
+      "attendanceData": {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        "attendance": [99, 98, 100, 99, 98, 99, 100, 99]
       }
     }
   ]
