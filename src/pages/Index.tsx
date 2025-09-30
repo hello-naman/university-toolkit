@@ -44,8 +44,8 @@ const Index = () => {
           </div>
         </CardHeader>
         
-        <CardContent className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
+        <CardContent className="space-y-8">
+          <div className="grid sm::grid-cols-3 gap-4">
             {/* Student Login Card */}
             <Card>
               <CardContent className="p-6 text-center space-y-4">

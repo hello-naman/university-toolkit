@@ -1,7 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Clock, Award, BookOpen, Trophy, Users } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { CheckCircle, Clock, Award, BookOpen, Trophy, Users, Filter } from "lucide-react";
+import { useState } from "react";
 
 interface Achievement {
   id: string;
@@ -15,10 +17,12 @@ interface Achievement {
 interface AchievementsListProps {
   achievements: Achievement[];
   isAdmin?: boolean;
+  isRecruiter?: boolean;
   onToggleVerification?: (achievementId: string) => void;
 }
 
-const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification }: AchievementsListProps) => {
+const AchievementsList = ({ achievements, isAdmin = false, isRecruiter = false, onToggleVerification }: AchievementsListProps) => {
+  const [selectedFilter, setSelectedFilter] = useState<string>('all');
   const getTypeIcon = (type: string) => {
     switch (type.toLowerCase()) {
       case 'course':
@@ -36,6 +40,12 @@ const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification 
 
   const getTypeColor = (type: string) => {
     switch (type.toLowerCase()) {
+      case 'educational':
+        return 'bg-blue-100 text-blue-800 border-blue-200';
+      case 'technical':
+        return 'bg-green-100 text-green-800 border-green-200';
+      case 'co-curricular':
+        return 'bg-purple-100 text-purple-800 border-purple-200';
       case 'course':
         return 'bg-blue-100 text-blue-800 border-blue-200';
       case 'competition':
@@ -49,19 +59,50 @@ const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification 
     }
   };
 
+  // Filter achievements based on selected filter and recruiter view
+  const filteredAchievements = achievements.filter(achievement => {
+    // For recruiters, only show verified achievements
+    if (isRecruiter && !achievement.verified) {
+      return false;
+    }
+    
+    // Filter by type
+    if (selectedFilter === 'all') {
+      return true;
+    }
+    return achievement.type.toLowerCase() === selectedFilter.toLowerCase();
+  });
+
   return (
     <Card className="bg-gradient-card border-border hover:shadow-card transition-all duration-300">
       <CardHeader>
-        <CardTitle className="flex items-center space-x-2">
-          <Award className="h-5 w-5 text-student" />
-          <span>Achievements</span>
-          <Badge variant="secondary" className="ml-auto">
-            {achievements.length} Total
-          </Badge>
-        </CardTitle>
+        <div className="flex items-center justify-between">
+          <CardTitle className="flex items-center space-x-2">
+            <Award className="h-5 w-5 text-student" />
+            <span>Achievements</span>
+            <Badge variant="secondary" className="ml-2">
+              {filteredAchievements.length} / {achievements.length}
+            </Badge>
+          </CardTitle>
+          
+          <div className="flex items-center space-x-2">
+            <Filter className="h-4 w-4 text-muted-foreground" />
+            <Select value={selectedFilter} onValueChange={setSelectedFilter}>
+              <SelectTrigger className="w-40">
+                <SelectValue placeholder="Filter by type" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Types</SelectItem>
+                <SelectItem value="educational">Educational</SelectItem>
+                <SelectItem value="technical">Technical</SelectItem>
+                <SelectItem value="co-curricular">Co-curricular</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
       </CardHeader>
       <CardContent className="space-y-4">
-        {achievements.map((achievement) => {
+        {filteredAchievements.map((achievement) => {
           const TypeIcon = getTypeIcon(achievement.type);
           
           return (
@@ -126,13 +167,19 @@ const AchievementsList = ({ achievements, isAdmin = false, onToggleVerification 
           );
         })}
         
-        {achievements.length === 0 && (
+        {filteredAchievements.length === 0 && (
           <div className="text-center py-8 text-muted-foreground">
             <Award className="h-12 w-12 mx-auto mb-4 opacity-50" />
-            <p>No achievements recorded yet</p>
+            <p>
+              {achievements.length === 0 
+                ? "No achievements recorded yet" 
+                : selectedFilter === 'all' 
+                  ? "No verified achievements found"
+                  : `No ${selectedFilter} achievements found`
+              }
+            </p>
           </div>
         )}
-        <div className="text-center font-semibold text-sm text-foreground cursor-pointer hover:underline">+ Add Achievement</div>
       </CardContent>
     </Card>
   );

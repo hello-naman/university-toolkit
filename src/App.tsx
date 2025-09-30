@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import StudentLogin from "./pages/StudentLogin";
 import AdminLogin from "./pages/AdminLogin";
 import RecruiterLogin from "./pages/RecruiterLogin";
+import RecruiterPanel from "./pages/RecruiterPanel";
+import RecruiterSelection from "./pages/RecruiterSelection";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +24,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/student/dashboard" element={<StudentDashboard />} />
+          <Route path="/recruiter/selection" element={<RecruiterSelection />} />
+          <Route path="/recruiter/panel" element={<RecruiterPanel />} />
           <Route path="/admin/panel" element={<AdminPanel />} />
           <Route path="/student/login" element={<StudentLogin />} />
           <Route path="/admin/login" element={<AdminLogin />} />
